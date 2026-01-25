@@ -3,197 +3,307 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Evergreen Compliance Consulting — MN Assisted Living</title>
-  <meta name="description" content="MN Assisted Living compliance consults and readiness audits. Fast, practical guidance aligned to 144G, Rule 4659, DHS/MDH expectations." />
+  <title>Evergreen Compliance Consulting — Minnesota Assisted Living</title>
+  <meta name="description" content="Minnesota Assisted Living compliance consulting aligned to 144G, Rule 4659, and MDH expectations. Survey readiness, EP binders, contract/policy review, mock walkthroughs, and remediation support." />
+  <meta name="theme-color" content="#0f5132" />
+
+  <!-- Social Preview -->
+  <meta property="og:title" content="Evergreen Compliance Consulting — Minnesota Assisted Living" />
+  <meta property="og:description" content="Survey readiness. EP binder. Contract & policy review. Mock walkthroughs. Clear remediation roadmap." />
+  <meta property="og:type" content="website" />
+
+  <!-- Fonts + Tailwind -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
+
   <style>
-    :root { --brand:#0f5132; --brandLite:#e6f4ee; }
+    :root{
+      --brand:#0f5132;
+      --brandLite:#e6f4ee;
+      --ink:#0f172a;
+    }
     body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica,Arial,sans-serif;}
-    .card{border-radius:1rem; box-shadow:0 10px 30px rgba(0,0,0,.06);}  
+    .card{border-radius:1.25rem; box-shadow:0 12px 40px rgba(2,6,23,.08);}
+    .soft{box-shadow:0 10px 30px rgba(2,6,23,.06);}
+    .ringbrand{outline: 2px solid rgba(15,81,50,.20); outline-offset: 2px;}
+    .skip{position:absolute;left:-999px;top:auto;width:1px;height:1px;overflow:hidden;}
+    .skip:focus{left:16px;top:16px;width:auto;height:auto;background:#fff;padding:10px 12px;border-radius:12px;z-index:9999;}
   </style>
 </head>
+
 <body class="bg-white text-slate-800">
-  <!-- Top Bar -->
-  <header class="w-full bg-[color:var(--brand)] text-white">
+  <a class="skip" href="#main">Skip to content</a>
+
+  <!-- Header -->
+  <header class="w-full bg-[color:var(--brand)] text-white sticky top-0 z-50">
     <div class="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between">
-      <div class="flex items-center gap-3">
-        <div class="w-9 h-9 rounded-full bg-white/10 grid place-items-center">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-2xl bg-white/10 grid place-items-center ring-1 ring-white/20">
           <span class="text-xl">🌲</span>
         </div>
         <div>
-          <p class="font-semibold leading-tight">Evergreen Compliance Consulting</p>
-          <p class="text-sm opacity-90">Practical compliance for MN Assisted Living</p>
+          <p class="font-extrabold leading-tight tracking-tight">Evergreen Compliance Consulting</p>
+          <p class="text-sm opacity-90">Minnesota Assisted Living • 144G • Rule 4659 • MDH Survey Readiness</p>
         </div>
-      </div>
-      <div class="hidden md:flex items-center gap-6 text-sm">
-        <a href="#offers" class="hover:underline">Services</a>
-        <a href="#proof" class="hover:underline">Proof</a>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm font-semibold">
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#process" class="hover:underline">Process</a>
+        <a href="#proof" class="hover:underline">Results</a>
         <a href="#faq" class="hover:underline">FAQ</a>
-        <a href="#book" class="inline-flex items-center gap-2 bg-white text-[color:var(--brand)] px-4 py-2 rounded-xl font-semibold">Book</a>
-      </div>
+        <a href="#book" class="inline-flex items-center gap-2 bg-white text-[color:var(--brand)] px-4 py-2 rounded-xl font-extrabold soft">
+          Book
+        </a>
+      </nav>
     </div>
   </header>
 
-  <!-- Hero -->
-  <section class="bg-[color:var(--brandLite)]">
-    <div class="max-w-6xl mx-auto px-4 py-16 grid md:grid-cols-2 gap-10 items-center">
-      <div>
-        <h1 class="text-4xl md:text-5xl font-bold text-[color:var(--brand)]">Ready in 48 hours: Compliance consults that move you forward</h1>
-        <p class="mt-5 text-lg text-slate-700">Fast, actionable guidance aligned to Minnesota 144G, Rule 4659, and MDH/DHS expectations. Get a prioritized action list you can implement immediately.</p>
-        <div class="mt-6 flex flex-wrap gap-3">
-          <a href="#book" class="bg-[color:var(--brand)] text-white px-6 py-3 rounded-2xl font-semibold">Book a Consult</a>
-          <a href="#offers" class="px-6 py-3 rounded-2xl font-semibold border border-[color:var(--brand)] text-[color:var(--brand)]">See Packages</a>
+  <main id="main">
+    <!-- Hero -->
+    <section class="bg-[color:var(--brandLite)] relative overflow-hidden">
+      <!-- Decorative SVG background "image" -->
+      <svg class="absolute right-[-160px] top-[-220px] opacity-30" width="620" height="620" viewBox="0 0 620 620" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <circle cx="310" cy="310" r="290" stroke="#0f5132" stroke-width="18"/>
+        <circle cx="310" cy="310" r="220" stroke="#0f5132" stroke-width="10" opacity=".5"/>
+        <circle cx="310" cy="310" r="150" stroke="#0f5132" stroke-width="6" opacity=".35"/>
+      </svg>
+
+      <div class="max-w-6xl mx-auto px-4 py-16 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="inline-flex items-center gap-2 text-sm font-bold text-[color:var(--brand)] bg-white/70 px-3 py-2 rounded-full ring-1 ring-[color:var(--brand)]/15">
+            <span>✅</span> Survey-readiness consulting for MN Assisted Living
+          </p>
+
+          <h1 class="mt-4 text-4xl md:text-5xl font-extrabold text-[color:var(--brand)] leading-tight">
+            Be MDH-ready with a clear action plan, clean evidence, and a compliant contract.
+          </h1>
+
+          <p class="mt-5 text-lg text-slate-700">
+            Practical guidance aligned to <strong>144G</strong>, <strong>Rule 4659</strong>, and <strong>MDH survey expectations</strong>.
+            We prioritize the high-risk items that trigger citations and organize your documentation so it holds up under review.
+          </p>
+
+          <div class="mt-7 flex flex-wrap gap-3">
+            <a href="#book" class="bg-[color:var(--brand)] text-white px-6 py-3 rounded-2xl font-extrabold soft">
+              Book a Consult
+            </a>
+            <a href="#services" class="px-6 py-3 rounded-2xl font-extrabold border border-[color:var(--brand)] text-[color:var(--brand)] bg-white/60">
+              See Services
+            </a>
+            <a href="mailto:evergreencomplianceconsulting@gmail.com?subject=Evergreen%20Compliance%20Consulting%20Inquiry" class="px-6 py-3 rounded-2xl font-extrabold border border-slate-200 bg-white">
+              Email
+            </a>
+          </div>
+
+          <div class="mt-6 grid sm:grid-cols-3 gap-3 text-sm">
+            <div class="bg-white/75 rounded-2xl p-4 ring-1 ring-slate-200">
+              <p class="font-extrabold text-[color:var(--brand)]">Focus</p>
+              <p class="text-slate-600 mt-1">Provisional licensees & survey readiness</p>
+            </div>
+            <div class="bg-white/75 rounded-2xl p-4 ring-1 ring-slate-200">
+              <p class="font-extrabold text-[color:var(--brand)]">Deliverables</p>
+              <p class="text-slate-600 mt-1">Tracker + binder structure + evidence rules</p>
+            </div>
+            <div class="bg-white/75 rounded-2xl p-4 ring-1 ring-slate-200">
+              <p class="font-extrabold text-[color:var(--brand)]">Methods</p>
+              <p class="text-slate-600 mt-1">Mock survey walkthroughs + remediation roadmap</p>
+            </div>
+          </div>
         </div>
-        <p class="mt-4 text-sm text-slate-600">Admin: Marie Saidy, Assisted Living Director (MN). Field experience completed; focus on survey readiness, service plans, and referral coordination.</p>
-      </div>
-      <div class="card bg-white p-6">
-        <ul class="space-y-3 text-slate-700">
-          <li class="flex items-start gap-3"><span>✅</span> Service Plan / 144G alignment reviews</li>
-          <li class="flex items-start gap-3"><span>✅</span> Survey readiness (mock citations, corrective plans)</li>
-          <li class="flex items-start gap-3"><span>✅</span> Policies & procedures gap scan</li>
-          <li class="flex items-start gap-3"><span>✅</span> Admission & Transition of Care quick-audits</li>
-          <li class="flex items-start gap-3"><span>✅</span> Staff training outlines & checklists</li>
-          <li class="flex items-start gap-3"><span>✅</span> 245D HCBS licensing support (policies, DM/DC training)</li>
-          <li class="flex items-start gap-3"><span>✅</span> PCA/CFSS DHS enrollment & testing materials</li>
-          <li class="flex items-start gap-3"><span>✅</span> Emergency Preparedness Plans & drills</li>
-          <li class="flex items-start gap-3"><span>✅</span> Assisted Living Director exam coaching</li>
-        </ul>
-        <div class="mt-6 p-4 rounded-xl bg-[color:var(--brandLite)] border border-[color:var(--brand)]/10 text-sm">
-          <p><strong>Fast start:</strong> lock a 60‑min consult at the intro rate and leave with a prioritized action plan + templates list.</p>
+
+        <!-- Right card -->
+        <div class="card bg-white p-6">
+          <div class="flex items-center gap-3">
+            <!-- Inline SVG "image" icon -->
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <rect x="4" y="6" width="36" height="32" rx="10" fill="#e6f4ee"/>
+              <path d="M14 18h16M14 24h16M14 30h10" stroke="#0f5132" stroke-width="2.6" stroke-linecap="round"/>
+              <path d="M30 12l2-2 2 2" stroke="#0f5132" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <div>
+              <p class="text-xl font-extrabold text-slate-900">What we do (high-impact)</p>
+              <p class="text-sm text-slate-600">Built for real survey pressure, not theory.</p>
+            </div>
+          </div>
+
+          <ul class="mt-6 space-y-3 text-slate-700">
+            <li class="flex items-start gap-3"><span>✅</span> Emergency Preparedness binder + drills (Appendix Z / MDH expectations)</li>
+            <li class="flex items-start gap-3"><span>✅</span> Survey Readiness binder (MDH-style evidence organization)</li>
+            <li class="flex items-start gap-3"><span>✅</span> Policy & procedure review + tailoring to facility operations</li>
+            <li class="flex items-start gap-3"><span>✅</span> Assisted Living contract review for 144G compliance risks</li>
+            <li class="flex items-start gap-3"><span>✅</span> Mock onsite walkthrough (egress, extinguishers, alarms, postings)</li>
+            <li class="flex items-start gap-3"><span>✅</span> Remediation tracker + weekly execution plan</li>
+          </ul>
+
+          <div class="mt-6 p-4 rounded-2xl bg-[color:var(--brandLite)] border border-[color:var(--brand)]/10 text-sm">
+            <p><strong>Fast start:</strong> book a consult and leave with a prioritized list of what to fix first—plus exactly what evidence MDH expects.</p>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- Offers -->
-  <section id="offers" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-3xl font-bold text-[color:var(--brand)]">Quick‑Start Offers</h2>
-    <p class="mt-2 text-slate-600">Keep it simple. Two ways to start this week.</p>
+    <!-- Services -->
+    <section id="services" class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-3xl font-extrabold text-[color:var(--brand)]">Services</h2>
+      <p class="mt-2 text-slate-600">Choose a focused engagement or an expedited readiness package.</p>
 
-    <div class="grid md:grid-cols-2 gap-6 mt-8">
-      <div class="card bg-white p-6 border border-slate-200">
-        <h3 class="text-2xl font-semibold">60‑Minute Compliance Consult</h3>
-        <p class="text-slate-600 mt-2">Intro rate <span class="font-semibold">$149</span>. Focus on your highest‑risk gaps. You’ll get a prioritized action list + next steps.</p>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li>• Live Zoom or phone</li>
-          <li>• Covers 144G hot spots, Rule 4659, and survey pain points</li>
-          <li>• Follow‑up summary by email</li>
-        </ul>
-        <div class="mt-5 flex gap-3">
-          <a href="#book" class="px-5 py-3 rounded-xl bg-[color:var(--brand)] text-white font-semibold">Book Now</a>
-          <a href="#pay" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold">Pay & Confirm</a>
-        </div>
-      </div>
-
-      <div class="card bg-white p-6 border border-slate-200">
-        <h3 class="text-2xl font-semibold">AL Readiness Audit</h3>
-        <p class="text-slate-600 mt-2">Flat <span class="font-semibold">$199</span>. Checklist + quick doc review to stage your survey readiness and admissions flow.</p>
-        <ul class="mt-4 space-y-2 text-sm">
-          <li>• Intake: 20‑min call + document list</li>
-          <li>• Findings with Red/Amber/Green priority</li>
-          <li>• 5–7 high‑impact fixes you can do this week</li>
-        </ul>
-        <div class="mt-5 flex gap-3">
-          <a href="#book" class="px-5 py-3 rounded-xl bg-[color:var(--brand)] text-white font-semibold">Book Audit</a>
-          <a href="#pay" class="px-5 py-3 rounded-xl border border-slate-300 font-semibold">Pay & Confirm</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Proof -->
-  <section id="proof" class="bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-14 grid md:grid-cols-3 gap-6">
-      <div class="card bg-white p-6 border border-slate-200">
-        <p class="text-sm text-slate-600">“We left with a clear to‑do list for 144G and an exact order to do it. Zero fluff.”</p>
-        <p class="mt-4 text-sm font-semibold">— Assisted Living Administrator, Twin Cities</p>
-      </div>
-      <div class="card bg-white p-6 border border-slate-200">
-        <p class="text-sm text-slate-600">“The readiness audit showed 6 items we fixed in 48 hours. It paid for itself.”</p>
-        <p class="mt-4 text-sm font-semibold">— Program Coordinator, 5‑bed AL</p>
-      </div>
-      <div class="card bg-white p-6 border border-slate-200">
-        <p class="text-sm text-slate-600">“Best part was the survey prep checklist and mock‑citation notes.”</p>
-        <p class="mt-4 text-sm font-semibold">— Nurse Supervisor</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- Booking -->
-  <section id="book" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-3xl font-bold text-[color:var(--brand)]">Book Your Slot</h2>
-    <p class="mt-2 text-slate-600">Pick a time, then complete payment to lock it in.</p>
-
-    <!-- Calendly Inline Embed (replace YOUR_LINK) -->
-    <div class="mt-6 card bg-white p-4 border border-slate-200">
-      <div class="aspect-[16/9] w-full">
-        <iframe src="https://calendly.com/evergreencomplianceconsulting/60min?hide_event_type_details=1&hide_gdpr_banner=1" class="w-full h-full rounded-xl" frameborder="0"></iframe>
-      </div>
-      <p class="text-sm text-slate-500 mt-2">Don’t have Calendly yet? Book by text: <a class="underline" href="tel:13204697560">(320) 469‑7560</a>.</p>
-    </div>
-  </section>
-
-  <!-- Payment -->
-  <section id="pay" class="bg-slate-50">
-    <div class="max-w-6xl mx-auto px-4 py-14">
-      <h2 class="text-3xl font-bold text-[color:var(--brand)]">Payment to Confirm</h2>
-      <p class="mt-2 text-slate-600">Pre‑payment confirms your slot. Prefer invoice? We’ll send a FreshBooks link instantly.</p>
       <div class="grid md:grid-cols-3 gap-6 mt-8">
         <div class="card bg-white p-6 border border-slate-200">
-          <h3 class="font-semibold">FreshBooks Invoice</h3>
-          <p class="text-sm text-slate-600">Pay by card via secure invoice link.</p>
-          <a class="mt-4 inline-block px-5 py-3 rounded-xl bg-[color:var(--brand)] text-white font-semibold" href="#" target="_blank">Request Invoice</a>
+          <p class="text-sm font-extrabold text-[color:var(--brand)]">Provisional License • Survey Imminent</p>
+          <h3 class="text-xl font-extrabold mt-2">Expedited Survey Readiness</h3>
+          <p class="text-slate-600 mt-2 text-sm">For facilities awaiting an MDH survey. Prioritized gaps, evidence rules, binder structure, and remediation plan.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-700">
+            <li>• EP binder + drills checklist</li>
+            <li>• Survey Readiness binder map</li>
+            <li>• Contract + policy review</li>
+            <li>• Tracker with owners/due dates</li>
+          </ul>
+          <a href="#book" class="mt-5 inline-block px-5 py-3 rounded-xl bg-[color:var(--brand)] text-white font-extrabold">Book</a>
+        </div>
+
+        <div class="card bg-white p-6 border border-slate-200">
+          <p class="text-sm font-extrabold text-[color:var(--brand)]">Operations • Ongoing</p>
+          <h3 class="text-xl font-extrabold mt-2">Policy + Systems Review</h3>
+          <p class="text-slate-600 mt-2 text-sm">We tailor policies to match your real workflow, staffing model, and documentation habits.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-700">
+            <li>• Policy alignment to 4659</li>
+            <li>• Staff training evidence plan</li>
+            <li>• File naming + storage rules</li>
+          </ul>
+          <a href="#book" class="mt-5 inline-block px-5 py-3 rounded-xl border border-slate-300 font-extrabold">Book</a>
+        </div>
+
+        <div class="card bg-white p-6 border border-slate-200">
+          <p class="text-sm font-extrabold text-[color:var(--brand)]">Onsite</p>
+          <h3 class="text-xl font-extrabold mt-2">Mock Survey Walkthrough</h3>
+          <p class="text-slate-600 mt-2 text-sm">Physical plant, postings, safety, and sample files—performed like an MDH surveyor.</p>
+          <ul class="mt-4 space-y-2 text-sm text-slate-700">
+            <li>• Extinguishers & inspection tags</li>
+            <li>• Smoke alarms / safety</li>
+            <li>• Egress basics (doors/windows)</li>
+            <li>• Postings verification</li>
+          </ul>
+          <a href="#book" class="mt-5 inline-block px-5 py-3 rounded-xl border border-slate-300 font-extrabold">Book</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section id="process" class="bg-slate-50">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-3xl font-extrabold text-[color:var(--brand)]">How it works</h2>
+        <div class="grid md:grid-cols-4 gap-6 mt-8">
+          <div class="card bg-white p-6 border border-slate-200">
+            <p class="text-sm font-extrabold text-[color:var(--brand)]">Step 1</p>
+            <p class="font-extrabold mt-2">Intake</p>
+            <p class="text-sm text-slate-600 mt-2">Confirm license type, capacity, survey status, services, staffing, and EP status.</p>
+          </div>
+          <div class="card bg-white p-6 border border-slate-200">
+            <p class="text-sm font-extrabold text-[color:var(--brand)]">Step 2</p>
+            <p class="font-extrabold mt-2">Prioritize</p>
+            <p class="text-sm text-slate-600 mt-2">We identify the gaps most likely to trigger survey findings and assign owners & deadlines.</p>
+          </div>
+          <div class="card bg-white p-6 border border-slate-200">
+            <p class="text-sm font-extrabold text-[color:var(--brand)]">Step 3</p>
+            <p class="font-extrabold mt-2">Evidence</p>
+            <p class="text-sm text-slate-600 mt-2">We ensure documentation is usable: dates, signatures, linkage, naming, and storage.</p>
+          </div>
+          <div class="card bg-white p-6 border border-slate-200">
+            <p class="text-sm font-extrabold text-[color:var(--brand)]">Step 4</p>
+            <p class="font-extrabold mt-2">Execute</p>
+            <p class="text-sm text-slate-600 mt-2">You implement. We guide, review, and keep the tracker moving until ready.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proof -->
+    <section id="proof" class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-3xl font-extrabold text-[color:var(--brand)]">Results clients value</h2>
+      <div class="grid md:grid-cols-3 gap-6 mt-8">
+        <div class="card bg-white p-6 border border-slate-200">
+          <p class="text-sm text-slate-600">“We finally understood what evidence actually means—and how to organize it so it holds up in survey.”</p>
+          <p class="mt-4 text-sm font-extrabold">— Assisted Living Owner</p>
         </div>
         <div class="card bg-white p-6 border border-slate-200">
-          <h3 class="font-semibold">Zelle</h3>
-          <p class="text-sm text-slate-600">Send to <strong>3204697560</strong>. Add note: “Consult” or “Audit”.</p>
-          <a class="mt-4 inline-block px-5 py-3 rounded-xl border border-slate-300 font-semibold" href="tel:13204697560">Text for Receipt</a>
+          <p class="text-sm text-slate-600">“The EP binder and drill documentation plan removed a huge risk for us.”</p>
+          <p class="mt-4 text-sm font-extrabold">— Program Coordinator</p>
         </div>
         <div class="card bg-white p-6 border border-slate-200">
-          <h3 class="font-semibold">PayPal</h3>
-          <p class="text-sm text-slate-600">We accept PayPal by link (on request).</p>
-          <a class="mt-4 inline-block px-5 py-3 rounded-xl border border-slate-300 font-semibold" href="mailto:evergreencomplianceconsulting@gmail.com">Email for Link</a>
+          <p class="text-sm text-slate-600">“The contract clean-up prevented multiple tags. Worth every dollar.”</p>
+          <p class="mt-4 text-sm font-extrabold">— Administrator</p>
         </div>
       </div>
-      <p class="mt-4 text-sm text-slate-500">Refund policy: 100% if canceled ≥12h before; otherwise credit toward a rebooked slot.</p>
-    </div>
-  </section>
+    </section>
 
-  <!-- FAQ -->
-  <section id="faq" class="max-w-6xl mx-auto px-4 py-14">
-    <h2 class="text-3xl font-bold text-[color:var(--brand)]">FAQ</h2>
-    <div class="mt-6 grid md:grid-cols-2 gap-6">
-      <div class="card bg-white p-6 border border-slate-200">
-        <h3 class="font-semibold">Do you provide templates?</h3>
-        <p class="text-sm text-slate-600 mt-2">Yes—checklists, mock‑survey forms, policy outlines, and implementation trackers as relevant to your scope.</p>
-      </div>
-      <div class="card bg-white p-6 border border-slate-200">
-        <h3 class="font-semibold">Is this MN‑specific?</h3>
-        <p class="text-sm text-slate-600 mt-2">Yes. We focus on Minnesota Assisted Living regulations (144G), Rule 4659, and typical MDH/DHS expectations.</p>
-      </div>
-    </div>
-  </section>
+    <!-- Booking -->
+    <section id="book" class="bg-[color:var(--brandLite)]">
+      <div class="max-w-6xl mx-auto px-4 py-14">
+        <h2 class="text-3xl font-extrabold text-[color:var(--brand)]">Book Your Slot</h2>
+        <p class="mt-2 text-slate-700">Choose a time below. If the widget doesn’t load, use the direct link.</p>
 
-  <!-- Footer -->
-  <footer class="bg-[color:var(--brand)] text-white">
-    <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
-      <div>
-        <p class="font-semibold">Evergreen Compliance Consulting</p>
-        <p class="text-sm opacity-90 mt-2">Quality care in a home‑like setting starts with compliant, resident‑centered systems.</p>
+        <!-- Calendly inline widget (reliable) -->
+        <div class="mt-6 card bg-white p-4 border border-slate-200">
+          <div class="calendly-inline-widget"
+               data-url="https://calendly.com/evergreencomplianceconsulting/60min?hide_event_type_details=1&hide_gdpr_banner=1"
+               style="min-width:320px;height:760px;"></div>
+        </div>
+
+        <p class="mt-3 text-sm text-slate-600">
+          Backup link:
+          <a class="underline font-bold" href="https://calendly.com/evergreencomplianceconsulting/60min" target="_blank" rel="noopener">
+            Open booking in a new tab
+          </a>
+          • Or call/text <a class="underline font-bold" href="tel:13204697560">(320) 469-7560</a>.
+        </p>
       </div>
-      <div>
-        <p class="font-semibold">Contact</p>
-        <p class="text-sm opacity-90 mt-2">Email: <a href="mailto:evergreencomplianceconsulting@gmail.com" class="underline text-white">evergreencomplianceconsulting@gmail.com</a></p>
-        <p class="text-sm opacity-90">Phone: <a href="tel:13204697560" class="underline text-white">(320) 469‑7560</a></p>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="max-w-6xl mx-auto px-4 py-14">
+      <h2 class="text-3xl font-extrabold text-[color:var(--brand)]">FAQ</h2>
+      <div class="mt-6 grid md:grid-cols-2 gap-6">
+        <div class="card bg-white p-6 border border-slate-200">
+          <h3 class="font-extrabold">Do you provide templates?</h3>
+          <p class="text-sm text-slate-600 mt-2">Yes—trackers, checklists, binder maps, evidence rules, and practical implementation tools.</p>
+        </div>
+        <div class="card bg-white p-6 border border-slate-200">
+          <h3 class="font-extrabold">Is this Minnesota-specific?</h3>
+          <p class="text-sm text-slate-600 mt-2">Yes. We focus on 144G, Rule 4659, and how MDH surveyors evaluate compliance and evidence.</p>
+        </div>
       </div>
-      <div>
-        <p class="font-semibold">Booking</p>
-        <p class="text-sm opacity-90 mt-2">Use the booking widget above or text for a time. Pre‑payment confirms your slot.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-[color:var(--brand)] text-white">
+      <div class="max-w-6xl mx-auto px-4 py-10 grid md:grid-cols-3 gap-6">
+        <div>
+          <p class="font-extrabold">Evergreen Compliance Consulting</p>
+          <p class="text-sm opacity-90 mt-2">Practical compliance systems for MN Assisted Living.</p>
+        </div>
+        <div>
+          <p class="font-extrabold">Contact</p>
+          <p class="text-sm opacity-90 mt-2">
+            Email:
+            <a href="mailto:evergreencomplianceconsulting@gmail.com" class="underline text-white">evergreencomplianceconsulting@gmail.com</a>
+          </p>
+          <p class="text-sm opacity-90">
+            Phone:
+            <a href="tel:13204697560" class="underline text-white">(320) 469-7560</a>
+          </p>
+        </div>
+        <div>
+          <p class="font-extrabold">Notes</p>
+          <p class="text-sm opacity-90 mt-2">Pre-payment confirms booking when applicable. Invoices available on request.</p>
+        </div>
       </div>
-    </div>
-  </footer>
+    </footer>
+  </main>
+
+  <!-- Calendly embed script -->
+  <script src="https://assets.calendly.com/assets/external/widget.js" async></script>
 </body>
 </html>
